@@ -1,7 +1,7 @@
 var mysql = require("mysql");
 var inquirer = require("inquirer");
 
-// Create connection for SQL database
+// create connection for SQL database
 var connection = mysql.createConnection
     ({
         host: "localhost",
@@ -11,7 +11,7 @@ var connection = mysql.createConnection
         database: "bamazon"
     })
 
-// Connect to MYSQL server and SQL Databse
+// connect to mySQL server and SQL databse
 connection.connect(function (error) {
     if (error) throw error;
 
@@ -20,8 +20,8 @@ connection.connect(function (error) {
     displayProducts();
 })
 
-// Display all items available for sale
-// Include ids, names, and prices of products for sale.
+// display all items available for sale
+// include ids, names, and prices of products for sale.
 var displayProducts = function () {
 
     console.log("Below are the list of products available for sale: \n");
@@ -37,10 +37,10 @@ var displayProducts = function () {
     })
 }
 
-// Prompt customer with two messages
+// prompt customer with two messages
 var promptCustomer = function (response) {
 
-    // Ask ID of the product they would like to buy
+    // ask ID of the product they would like to buy
     inquirer.prompt
         ([{
             type: "input",
@@ -52,7 +52,7 @@ var promptCustomer = function (response) {
                 process.exit();
             }
 
-            // Ask how many units of the product they would like to buy
+            // ask how many units of the product they would like to buy
             for (var i = 0; i < response.length; i++) {
                 if (response[i].item_id == answer.selection) {
                     correct = true;
@@ -60,7 +60,7 @@ var promptCustomer = function (response) {
                     var productPrice = response[i].price;
                     var productQuantity;
 
-                    // Saving ID number customer wants to buy
+                    // saving ID number customer wants to buy
                     var id = i;
                     inquirer.prompt
                         ({
@@ -87,35 +87,35 @@ var promptCustomer = function (response) {
                                     displayOrder(productQuantity, productName, productPrice);
                                 })
 
-                                // Check quantity of product to meet customer's request
-                                // If not, log message `Insufficient quantity!`, and prevent the order from going through.
+                                // check quantity of product to meet customer's request
+                                // else, log message `Insufficient quantity!`, and prevent the order from going through
                             }
                             else {
-                                console.log("Try again. Insufficient quantity!");
+                                console.log("Insufficient quantity! Try again.");
                                 promptCustomer(response);
                             }
                         })
                 }
             }
 
-            // Check if customer placed valid item number 
+            // check if customer placed valid item number 
             if (i == response.length && correct == false) {
-                // If not, log message `Not a valid selection.`, and prevent the order from going through.
+                // else, log message `Not a valid selection.`, and prevent the order from going through
                 console.log("Not a valid selection.");
                 promptCustomer(response);
             }
         })
 }
 
-// If my store does have enough product, fulfill customer's order(s)
+// if store has enough product quantity, fulfill customer order
 function displayOrder(quantity, name, price) {
     orderTotal = quantity * price;
     console.log("Thanks for your order! Please see details of your order below: \n");
 
-    // Once update goes through, show the customer the total cost of their purchase
+    // after update goes through, show customer total cost of purchase
     console.log("Total cost of purchase: $" + orderTotal);
     console.log("---------------------------------------------------------------------------");
 
-    // End the program
+    // end program
     process.exit();
 }

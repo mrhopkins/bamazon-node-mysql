@@ -1,7 +1,7 @@
 var mysql = require("mysql");
 var inquirer = require("inquirer");
 
-// Create connection for SQL database
+// create connection for SQL database
 var connection = mysql.createConnection
     ({
         host: "localhost",
@@ -11,11 +11,11 @@ var connection = mysql.createConnection
         database: "bamazon"
     })
 
-// Function to display main menu options
+// function to display main menu options
 var mainMenu = function () {
     inquirer.prompt
         ([{
-            // Create a list of menu options for manager to select from
+            // create list of menu options for manager to select from
             // View Products for Sale, View Low Inventory, Add to Inventory, Add New Product, Exit
             name: "menuOptions",
             type: "list",
@@ -81,7 +81,7 @@ var displayProducts = function () {
     })
 }
 
-// If a manager selects`View Low Inventory`, list all items with an inventory lower than five.
+// if manager selects`View Low Inventory`, list all items with inventory of five units or less.
 var lowInventory = function () {
     console.log("Below are the list of product(s) with low inventory: \n");
 
@@ -104,9 +104,9 @@ var lowInventory = function () {
     });
 }
 
-// If a manager selects`Add New Product`, allow manager to add new product to the store.
+// if manager selects`Add New Product`, allow manager to add new product to store.
 var addNewProduct = function () {
-    // Prompt manager for new product name, department name, price, and quantity to be added
+    // prompt manager for new product name, department name, price, and quantity to be added
     inquirer.prompt
         ([
             {
@@ -143,7 +143,7 @@ var addNewProduct = function () {
             }
         ])
         .then(function (answer) {
-            // After prompt is done, insert new product to database with information manager entered
+            // after prompt is done, insert new product to database with information manager entered
             connection.query("INSERT INTO products SET ?",
                 {
                     product_name: answer.productName,
@@ -161,7 +161,7 @@ var addNewProduct = function () {
         });
 }
 
-// If a manager selects`Add to Inventory`, allow manager to add any item currently in the store.
+// if manager selects`Add to Inventory`, allow manager to add any item currently in store.
 var addInventory = function () {
 
     connection.query("SELECT * FROM products", function (error, response) {
@@ -171,9 +171,12 @@ var addInventory = function () {
                 name: "productName",
                 type: "list",
                 message: "What is the current product name you would like to update?",
-                choices: ["OTTO Swivel Recliner", "Aspen French Oak", "ST. James Armoire", "Belgian Linen Soap",
-                    "Brutalist Lamp", "Vintage Rug", "Dakota Rod Finnials", "Hanbel Pillow Collection",
-                    "KOEN Lybaert Art", "Provence Seating Collection"]
+                choices: ["Tide Free and Gentle Laundry Detergent Pods", "Vega One Organic All-in-One Shake Berry",
+                    "Wellness Complete Health Natural Cat Food", "The Critters Collection (Blu-ray)",
+                    "Invasion of the Body Snatchers Olive Signature", "Ozium Regular Smoke & Odors Eliminator Gel",
+                    "Amazon.com eGift Card", "TCL 55-Inch 4K Ultra HD Roku Smart LED TV",
+                    "Pet Sematary by Stephen King", "Apple iPad (Wi-Fi, 32GB) - Space Gray"]
+
             },
             {
                 name: "stockQuantity",

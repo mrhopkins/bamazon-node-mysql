@@ -1,0 +1,195 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /Users/mhopkins/Desktop/code/bamazon-node-mysql
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 115
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 35
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Bamazon Manager Demo (Add to Product)
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 960
+    content: "\e]1337;RemoteHost=mhopkins@MRH-MAC13.local\a\e]1337;CurrentDir=/Users/mhopkins/Desktop/code/bamazon-node-mysql\a\e]1337;ShellIntegrationVersion=13;shell=bash\a"
+  - delay: 15
+    content: "\e]7;file://MRH-MAC13.local/Users/mhopkins/Desktop/code/bamazon-node-mysql\a\e]133;C;\a\e]1337;RemoteHost=mhopkins@MRH-MAC13.local\a\e]1337;CurrentDir=/Users/mhopkins/Desktop/code/bamazon-node-mysql\a\e[?1034h\e]133;D;0\a\e]133;A\aMRH-MAC13:bamazon-node-mysql mhopkins$ \e]133;B\a"
+  - delay: 2269
+    content: 'n'
+  - delay: 120
+    content: o
+  - delay: 176
+    content: d
+  - delay: 17
+    content: e
+  - delay: 255
+    content: ' '
+  - delay: 696
+    content: b
+  - delay: 208
+    content: a
+  - delay: 232
+    content: m
+  - delay: 255
+    content: "\aazon"
+  - delay: 817
+    content: M
+  - delay: 231
+    content: 'anager.js '
+  - delay: 872
+    content: "\r\n"
+  - delay: 10
+    content: "\e]133;C;\a"
+  - delay: 362
+    content: "\e[?25l"
+  - delay: 5
+    content: "\e[32m?\e[39m \e[1mWhat would you like to do?\e[22m\e[0m \e[0m\e[2m(Use arrow keys)\e[22m\r\n\e[36m❯ View Products for Sale\e[39m \r\n  View Items with Low Inventory \r\n  Add Inventory to an Item \r\n  Add a new Product \r\n  Exit \e[7D\e[7C"
+  - delay: 2067
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mWhat would you like to do?\e[22m\e[0m \e[0m\r\n  View Products for Sale \r\n\e[36m❯ View Items with Low Inventory\e[39m \r\n  Add Inventory to an Item \r\n  Add a new Product \r\n  Exit \e[7D\e[7C"
+  - delay: 403
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mWhat would you like to do?\e[22m\e[0m \e[0m\r\n  View Products for Sale \r\n  View Items with Low Inventory \r\n\e[36m❯ Add Inventory to an Item\e[39m \r\n  Add a new Product \r\n  Exit \e[7D\e[7C"
+  - delay: 1460
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mWhat would you like to do?\e[22m\e[0m \e[0m\e[36mAdd Inventory to an Item\e[39m\e[53D\e[53C\r\n\e[?25h"
+  - delay: 6
+    content: "{ menuOptions: \e[32m'Add Inventory to an Item'\e[39m }\r\n"
+  - delay: 20
+    content: "\e[?25l\e[32m?\e[39m \e[1mWhat is the current product name you would like to update?\e[22m\e[0m \e[0m\e[2m(Use arrow keys)\e[22m\r\n\e[36m❯ Tide Free and Gentle Laundry Detergent Pods\e[39m \r\n  Vega One Organic All-in-One Shake Berry \r\n  Wellness Complete Health Natural Cat Food \r\n  The Critters Collection (Blu-ray) \r\n  Invasion of the Body Snatchers Olive Signature \r\n  Ozium Regular Smoke & Odors Eliminator Gel \r\n  Amazon.com eGift Card \r\n\e[2m(Move up and down to reveal more choices)\e[22m\e[41D\e[41C"
+  - delay: 2274
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mWhat is the current product name you would like to update?\e[22m\e[0m \e[0m\r\n  Tide Free and Gentle Laundry Detergent Pods \r\n\e[36m❯ Vega One Organic All-in-One Shake Berry\e[39m \r\n  Wellness Complete Health Natural Cat Food \r\n  The Critters Collection (Blu-ray) \r\n  Invasion of the Body Snatchers Olive Signature \r\n  Ozium Regular Smoke & Odors Eliminator Gel \r\n  Amazon.com eGift Card \r\n\e[2m(Move up and down to reveal more choices)\e[22m\e[41D\e[41C"
+  - delay: 1280
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mWhat is the current product name you would like to update?\e[22m\e[0m \e[0m\e[36mVega One Organic Al\r\nl-in-One Shake Berry\e[39m\e[20D\e[20C\r\n\e[?25h\e[32m?\e[39m \e[1mWhat quantity is available to add?\e[22m\e[0m \e[0m\e[37D\e[37C"
+  - delay: 4898
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat quantity is available to add?\e[22m\e[0m \e[0m5\e[38D\e[38C"
+  - delay: 231
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat quantity is available to add?\e[22m\e[0m \e[0m50\e[39D\e[39C"
+  - delay: 175
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat quantity is available to add?\e[22m\e[0m \e[0m500\e[40D\e[40C"
+  - delay: 840
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat quantity is available to add?\e[22m\e[0m \e[0m\e[36m500\e[39m\e[40D\e[40C\r\n"
+  - delay: 5
+    content: "\r\n Your inventory has been added succesfully to an existing product! \r\n\r\nAvailable Products for Sale: \r\n\r\n---------------------------------------------------------------------------\r\nItem ID: 1\tProduct: Tide Free and Gentle Laundry Detergent Pods\t\tPrice: 17\t\tQty: 10\t\r\n\r\nItem ID: 2\tProduct: Vega One Organic All-in-One Shake Berry\t\tPrice: 34\t\tQty: 550\t\r\n\r\nItem ID: 3\tProduct: Wellness Complete Health Natural Cat Food\t\tPrice: 32\t\tQty: 50\t\r\n\r\nItem ID: 4\tProduct: The Critters Collection (Blu-ray)\t\tPrice: 50\t\tQty: 200\t\r\n\r\nItem ID: 5\tProduct: Invasion of the Body Snatchers Olive Signature\t\tPrice: 29\t\tQty: 50\t\r\n\r\nItem ID: 6\tProduct: Ozium Regular Smoke & Odors Eliminator Gel\t\tPrice: 16\t\tQty: 42\t\r\n\r\nItem ID: 7\tProduct: Amazon.com eGift Card\t\tPrice: 25\t\tQty: 200\t\r\n\r\nItem ID: 8\tProduct: TCL 55-Inch 4K Ultra HD Roku Smart LED TV\t\tPrice: 570\t\tQty: 80\t\r\n\r\nItem ID: 9\tProduct: Pet Sematary by Stephen King\t\tPrice: 18\t\tQty: 50\t\r\n\r\nItem ID: 10\tProduct: Apple iPad (Wi-Fi, 32GB) - Space Gray\t\tPrice: 329\t\tQty: 90\t\r\n\r\n--------------------------------------------------------------------------\r\n\e[?25l\e[32m?\e[39m \e[1mWhat would you like to do?\e[22m\e[0m \e[0m\e[2m(Use arrow keys)\e[22m\r\n\e[36m❯ View Products for Sale\e[39m \r\n  View Items with Low Inventory \r\n  Add Inventory to an Item \r\n  Add a new Product \r\n  Exit \e[7D\e[7C"
+  - delay: 2862
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mWhat would you like to do?\e[22m\e[0m \e[0m\r\n  View Products for Sale \r\n\e[36m❯ View Items with Low Inventory\e[39m \r\n  Add Inventory to an Item \r\n  Add a new Product \r\n  Exit \e[7D\e[7C"
+  - delay: 264
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mWhat would you like to do?\e[22m\e[0m \e[0m\r\n  View Products for Sale \r\n  View Items with Low Inventory \r\n\e[36m❯ Add Inventory to an Item\e[39m \r\n  Add a new Product \r\n  Exit \e[7D\e[7C"
+  - delay: 264
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mWhat would you like to do?\e[22m\e[0m \e[0m\r\n  View Products for Sale \r\n  View Items with Low Inventory \r\n  Add Inventory to an Item \r\n\e[36m❯ Add a new Product\e[39m \r\n  Exit \e[7D\e[7C"
+  - delay: 488
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mWhat would you like to do?\e[22m\e[0m \e[0m\r\n  View Products for Sale \r\n  View Items with Low Inventory \r\n  Add Inventory to an Item \r\n  Add a new Product \r\n\e[36m❯ Exit\e[39m \e[7D\e[7C"
+  - delay: 720
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mWhat would you like to do?\e[22m\e[0m \e[0m\e[36mExit\e[39m\e[33D\e[33C\r\n\e[?25h{ menuOptions: \e[32m'Exit'\e[39m }\r\n\e[?25h"
+  - delay: 9
+    content: "\e]7;file://MRH-MAC13.local/Users/mhopkins/Desktop/code/bamazon-node-mysql\a"
+  - delay: 5
+    content: "\e]1337;RemoteHost=mhopkins@MRH-MAC13.local\a\e]1337;CurrentDir=/Users/mhopkins/Desktop/code/bamazon-node-mysql\a\e]133;D;0\a\e]133;A\aMRH-MAC13:bamazon-node-mysql mhopkins$ \e]133;B\a"
+  - delay: 2207
+    content: "logout\r\n"
+  - delay: 10
+    content: "\e]133;C;\aSaving session..."
+  - delay: 15
+    content: "\r\n...copying shared history..."
+  - delay: 5
+    content: "\r\n...saving history..."
+  - delay: 9
+    content: "truncating history files...\r\n...completed.\r\n"

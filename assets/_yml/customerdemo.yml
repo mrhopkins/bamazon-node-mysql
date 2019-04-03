@@ -1,0 +1,175 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /Users/mhopkins/Desktop/code/bamazon-node-mysql
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 115
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 35
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Bamazon Customer Demo
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 959
+    content: "\e]1337;RemoteHost=mhopkins@MRH-MAC13.local\a\e]1337;CurrentDir=/Users/mhopkins/Desktop/code/bamazon-node-mysql\a\e]1337;ShellIntegrationVersion=13;shell=bash\a"
+  - delay: 13
+    content: "\e]7;file://MRH-MAC13.local/Users/mhopkins/Desktop/code/bamazon-node-mysql\a\e]133;C;\a\e]1337;RemoteHost=mhopkins@MRH-MAC13.local\a\e]1337;CurrentDir=/Users/mhopkins/Desktop/code/bamazon-node-mysql\a\e[?1034h\e]133;D;0\a\e]133;A\aMRH-MAC13:bamazon-node-mysql mhopkins$ \e]133;B\a"
+  - delay: 1000
+    content: 'node bamazonCustomer.js '
+  - delay: 968
+    content: "\r\n"
+  - delay: 10
+    content: "\e]133;C;\a"
+  - delay: 510
+    content: "Welcome to Bamazon! \r\n\r\nBelow are the list of products available for sale: \r\n\r\n---------------------------------------------------------------------------\r\nItem #: 1 || Product: Tide Free and Gentle Laundry Detergent Pods || Price: $17\r\n\r\nItem #: 2 || Product: Vega One Organic All-in-One Shake Berry || Price: $34\r\n\r\nItem #: 3 || Product: Wellness Complete Health Natural Cat Food || Price: $32\r\n\r\nItem #: 4 || Product: The Critters Collection (Blu-ray) || Price: $50\r\n\r\nItem #: 5 || Product: Invasion of the Body Snatchers Olive Signature || Price: $29\r\n\r\nItem #: 6 || Product: Ozium Regular Smoke & Odors Eliminator Gel || Price: $16\r\n\r\nItem #: 7 || Product: Amazon.com eGift Card || Price: $25\r\n\r\nItem #: 8 || Product: TCL 55-Inch 4K Ultra HD Roku Smart LED TV || Price: $570\r\n\r\nItem #: 9 || Product: Pet Sematary by Stephen King || Price: $18\r\n\r\nItem #: 10 || Product: Apple iPad (Wi-Fi, 32GB) - Space Gray || Price: $329\r\n\r\n---------------------------------------------------------------------------\r\n"
+  - delay: 18
+    content: "\e[32m?\e[39m \e[1mWhat is the item number of the product you would like to buy? [If you want to \r\nquit, press 'Q']\e[22m\e[0m \e[0m\e[17D\e[17C"
+  - delay: 1000
+    content: "\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mWhat is the item number of the product you would like to buy? [If you want to \r\nquit, press 'Q']\e[22m\e[0m \e[0m6\e[18D\e[18C"
+  - delay: 1000
+    content: "\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mWhat is the item number of the product you would like to buy? [If you want to \r\nquit, press 'Q']\e[22m\e[0m \e[0m\e[36m6\e[39m\e[18D\e[18C\r\n\e[32m?\e[39m \e[1mHow many units of the product would you like to buy?\e[22m\e[0m \e[0m\e[55D\e[55C"
+  - delay: 1000
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mHow many units of the product would you like to buy?\e[22m\e[0m \e[0m4\e[56D\e[56C"
+  - delay: 895
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mHow many units of the product would you like to buy?\e[22m\e[0m \e[0m\e[36m4\e[39m\e[56D\e[56C\r\n"
+  - delay: 5
+    content: "Item(s) purchased!\r\nThanks for your order! Please see details of your order below: \r\n\r\nTotal cost of purchase: $64\r\n---------------------------------------------------------------------------\r\n"
+  - delay: 8
+    content: "\e]7;file://MRH-MAC13.local/Users/mhopkins/Desktop/code/bamazon-node-mysql\a"
+  - delay: 5
+    content: "\e]1337;RemoteHost=mhopkins@MRH-MAC13.local\a\e]1337;CurrentDir=/Users/mhopkins/Desktop/code/bamazon-node-mysql\a\e]133;D;0\a\e]133;A\aMRH-MAC13:bamazon-node-mysql mhopkins$ \e]133;B\a"
+  - delay: 1000
+    content: 'node bamazonCustomer.js '
+  - delay: 1000
+    content: "\r\n"
+  - delay: 10
+    content: "\e]133;C;\a"
+  - delay: 359
+    content: "Welcome to Bamazon! \r\n\r\nBelow are the list of products available for sale: \r\n\r\n---------------------------------------------------------------------------\r\nItem #: 1 || Product: Tide Free and Gentle Laundry Detergent Pods || Price: $17\r\n\r\nItem #: 2 || Product: Vega One Organic All-in-One Shake Berry || Price: $34\r\n\r\nItem #: 3 || Product: Wellness Complete Health Natural Cat Food || Price: $32\r\n\r\nItem #: 4 || Product: The Critters Collection (Blu-ray) || Price: $50\r\n\r\nItem #: 5 || Product: Invasion of the Body Snatchers Olive Signature || Price: $29\r\n\r\nItem #: 6 || Product: Ozium Regular Smoke & Odors Eliminator Gel || Price: $16\r\n\r\nItem #: 7 || Product: Amazon.com eGift Card || Price: $25\r\n\r\nItem #: 8 || Product: TCL 55-Inch 4K Ultra HD Roku Smart LED TV || Price: $570\r\n\r\nItem #: 9 || Product: Pet Sematary by Stephen King || Price: $18\r\n\r\nItem #: 10 || Product: Apple iPad (Wi-Fi, 32GB) - Space Gray || Price: $329\r\n\r\n---------------------------------------------------------------------------\r\n"
+  - delay: 14
+    content: "\e[32m?\e[39m \e[1mWhat is the item number of the product you would like to buy? [If you want to \r\nquit, press 'Q']\e[22m\e[0m \e[0m\e[17D\e[17C"
+  - delay: 1000
+    content: "\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mWhat is the item number of the product you would like to buy? [If you want to \r\nquit, press 'Q']\e[22m\e[0m \e[0m1\e[18D\e[18C"
+  - delay: 1000
+    content: "\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mWhat is the item number of the product you would like to buy? [If you want to \r\nquit, press 'Q']\e[22m\e[0m \e[0m\e[36m1\e[39m\e[18D\e[18C\r\n\e[32m?\e[39m \e[1mHow many units of the product would you like to buy?\e[22m\e[0m \e[0m\e[55D\e[55C"
+  - delay: 1000
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mHow many units of the product would you like to buy?\e[22m\e[0m \e[0m7\e[56D\e[56C"
+  - delay: 1000
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mHow many units of the product would you like to buy?\e[22m\e[0m \e[0m\e[36m7\e[39m\e[56D\e[56C\r\nInsufficient quantity! Try again.\r\n\e[32m?\e[39m \e[1mWhat is the item number of the product you would like to buy? [If you want to \r\nquit, press 'Q']\e[22m\e[0m \e[0m\e[17D\e[17C"
+  - delay: 1000
+    content: "\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mWhat is the item number of the product you would like to buy? [If you want to \r\nquit, press 'Q']\e[22m\e[0m \e[0mQ\e[18D\e[18C"
+  - delay: 1000
+    content: "\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mWhat is the item number of the product you would like to buy? [If you want to \r\nquit, press 'Q']\e[22m\e[0m \e[0m\e[36mQ\e[39m\e[18D\e[18C\r\n"
+  - delay: 9
+    content: "\e]7;file://MRH-MAC13.local/Users/mhopkins/Desktop/code/bamazon-node-mysql\a\e]1337;RemoteHost=mhopkins@MRH-MAC13.local\a\e]1337;CurrentDir=/Users/mhopkins/Desktop/code/bamazon-node-mysql\a\e]133;D;0\a\e]133;A\aMRH-MAC13:bamazon-node-mysql mhopkins$ \e]133;B\a"
+  - delay: 5000
+    content: "logout\r\n"
+  - delay: 10
+    content: "\e]133;C;\aSaving session..."
+  - delay: 13
+    content: "\r\n...copying shared history..."
+  - delay: 5
+    content: "\r\n...saving history..."
+  - delay: 9
+    content: "truncating history files...\r\n...completed.\r\n"

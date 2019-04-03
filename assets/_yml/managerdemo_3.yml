@@ -1,0 +1,231 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /Users/mhopkins/Desktop/code/bamazon-node-mysql
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 115
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 35
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Bamazon Manager Demo (Add New Product)
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 651
+    content: "Restored session: Wed Apr  3 12:46:30 MDT 2019\r\n"
+  - delay: 23
+    content: "\e]1337;RemoteHost=mhopkins@MRH-MAC13.local\a\e]1337;CurrentDir=/Users/mhopkins/Desktop/code/bamazon-node-mysql\a\e]1337;ShellIntegrationVersion=13;shell=bash\a"
+  - delay: 11
+    content: "\e]7;file://MRH-MAC13.local/Users/mhopkins/Desktop/code/bamazon-node-mysql\a\e]133;C;\a\e]1337;RemoteHost=mhopkins@MRH-MAC13.local\a\e]1337;CurrentDir=/Users/mhopkins/Desktop/code/bamazon-node-mysql\a\e[?1034h\e]133;D;0\a\e]133;A\aMRH-MAC13:bamazon-node-mysql mhopkins$ \e]133;B\a"
+  - delay: 1000
+    content: 'n'
+  - delay: 144
+    content: o
+  - delay: 200
+    content: e
+  - delay: 695
+    content: "\b\e[K"
+  - delay: 297
+    content: d
+  - delay: 152
+    content: e
+  - delay: 712
+    content: ' '
+  - delay: 1000
+    content: b
+  - delay: 144
+    content: a
+  - delay: 183
+    content: m
+  - delay: 185
+    content: "\aazon"
+  - delay: 760
+    content: M
+  - delay: 200
+    content: 'anager.js '
+  - delay: 1000
+    content: "\r\n"
+  - delay: 10
+    content: "\e]133;C;\a"
+  - delay: 352
+    content: "\e[?25l\e[32m?\e[39m \e[1mWhat would you like to do?\e[22m\e[0m \e[0m\e[2m(Use arrow keys)\e[22m\r\n\e[36m❯ View Products for Sale\e[39m \r\n  View Items with Low Inventory \r\n  Add Inventory to an Item \r\n  Add a new Product \r\n  Exit \e[7D\e[7C"
+  - delay: 1000
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mWhat would you like to do?\e[22m\e[0m \e[0m\r\n  View Products for Sale \r\n\e[36m❯ View Items with Low Inventory\e[39m \r\n  Add Inventory to an Item \r\n  Add a new Product \r\n  Exit \e[7D\e[7C"
+  - delay: 364
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mWhat would you like to do?\e[22m\e[0m \e[0m\r\n  View Products for Sale \r\n  View Items with Low Inventory \r\n\e[36m❯ Add Inventory to an Item\e[39m \r\n  Add a new Product \r\n  Exit \e[7D\e[7C"
+  - delay: 343
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mWhat would you like to do?\e[22m\e[0m \e[0m\r\n  View Products for Sale \r\n  View Items with Low Inventory \r\n  Add Inventory to an Item \r\n\e[36m❯ Add a new Product\e[39m \r\n  Exit \e[7D\e[7C"
+  - delay: 1000
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mWhat would you like to do?\e[22m\e[0m \e[0m\e[36mAdd a new Product\e[39m\e[46D\e[46C\r\n\e[?25h"
+  - delay: 5
+    content: "{ menuOptions: \e[32m'Add a new Product'\e[39m }\r\n\e[32m?\e[39m \e[1mWhat is the new product name you would like to add in the store?\e[22m\e[0m \e[0m\e[67D\e[67C"
+  - delay: 2000
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat is the new product name you would like to add in the store?\e[22m\e[0m \e[0mW\e[68D\e[68C"
+  - delay: 215
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat is the new product name you would like to add in the store?\e[22m\e[0m \e[0mWi\e[69D\e[69C"
+  - delay: 472
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat is the new product name you would like to add in the store?\e[22m\e[0m \e[0mWid\e[70D\e[70C"
+  - delay: 535
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat is the new product name you would like to add in the store?\e[22m\e[0m \e[0mWidg\e[71D\e[71C"
+  - delay: 201
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat is the new product name you would like to add in the store?\e[22m\e[0m \e[0mWidge\e[72D\e[72C"
+  - delay: 191
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat is the new product name you would like to add in the store?\e[22m\e[0m \e[0mWidget\e[73D\e[73C"
+  - delay: 192
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat is the new product name you would like to add in the store?\e[22m\e[0m \e[0mWidgets\e[74D\e[74C"
+  - delay: 1000
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat is the new product name you would like to add in the store?\e[22m\e[0m \e[0m\e[36mWidgets\e[39m\e[74D\e[74C\r\n\e[32m?\e[39m \e[1mWhat is the department name?\e[22m\e[0m \e[0m\e[31D\e[31C"
+  - delay: 1000
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat is the department name?\e[22m\e[0m \e[0mW\e[32D\e[32C"
+  - delay: 199
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat is the department name?\e[22m\e[0m \e[0mWi\e[33D\e[33C"
+  - delay: 329
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat is the department name?\e[22m\e[0m \e[0mWid\e[34D\e[34C"
+  - delay: 215
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat is the department name?\e[22m\e[0m \e[0mWidg\e[35D\e[35C"
+  - delay: 127
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat is the department name?\e[22m\e[0m \e[0mWidge\e[36D\e[36C"
+  - delay: 152
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat is the department name?\e[22m\e[0m \e[0mWidget\e[37D\e[37C"
+  - delay: 95
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat is the department name?\e[22m\e[0m \e[0mWidgets\e[38D\e[38C"
+  - delay: 1000
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat is the department name?\e[22m\e[0m \e[0m\e[36mWidgets\e[39m\e[38D\e[38C\r\n\e[32m?\e[39m \e[1mWhat is the unit price?\e[22m\e[0m \e[0m\e[26D\e[26C"
+  - delay: 1000
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat is the unit price?\e[22m\e[0m \e[0m2\e[27D\e[27C"
+  - delay: 143
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat is the unit price?\e[22m\e[0m \e[0m25\e[28D\e[28C"
+  - delay: 1000
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat is the unit price?\e[22m\e[0m \e[0m\e[36m25\e[39m\e[28D\e[28C\r\n\e[32m?\e[39m \e[1mWhat is the quantity available for sale?\e[22m\e[0m \e[0m\e[43D\e[43C"
+  - delay: 1000
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat is the quantity available for sale?\e[22m\e[0m \e[0m1\e[44D\e[44C"
+  - delay: 240
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat is the quantity available for sale?\e[22m\e[0m \e[0m10\e[45D\e[45C"
+  - delay: 168
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat is the quantity available for sale?\e[22m\e[0m \e[0m100\e[46D\e[46C"
+  - delay: 1000
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat is the quantity available for sale?\e[22m\e[0m \e[0m\e[36m100\e[39m\e[46D\e[46C\r\n"
+  - delay: 23
+    content: "\r\n Your new product has been added succesfully! \r\n\r\nAvailable Products for Sale: \r\n\r\n---------------------------------------------------------------------------\r\nItem ID: 1\tProduct: Tide Free and Gentle Laundry Detergent Pods\t\tPrice: 17\t\tQty: 10\t\r\n\r\nItem ID: 2\tProduct: Vega One Organic All-in-One Shake Berry\t\tPrice: 34\t\tQty: 550\t\r\n\r\nItem ID: 3\tProduct: Wellness Complete Health Natural Cat Food\t\tPrice: 32\t\tQty: 50\t\r\n\r\nItem ID: 4\tProduct: The Critters Collection (Blu-ray)\t\tPrice: 50\t\tQty: 200\t\r\n\r\nItem ID: 5\tProduct: Invasion of the Body Snatchers Olive Signature\t\tPrice: 29\t\tQty: 50\t\r\n\r\nItem ID: 6\tProduct: Ozium Regular Smoke & Odors Eliminator Gel\t\tPrice: 16\t\tQty: 42\t\r\n\r\nItem ID: 7\tProduct: Amazon.com eGift Card\t\tPrice: 25\t\tQty: 200\t\r\n\r\nItem ID: 8\tProduct: TCL 55-Inch 4K Ultra HD Roku Smart LED TV\t\tPrice: 570\t\tQty: 80\t\r\n\r\nItem ID: 9\tProduct: Pet Sematary by Stephen King\t\tPrice: 18\t\tQty: 50\t\r\n\r\nItem ID: 10\tProduct: Apple iPad (Wi-Fi, 32GB) - Space Gray\t\tPrice: 329\t\tQty: 90\t\r\n\r\nItem ID: 11\tProduct: Widgets\t\tPrice: 25\t\tQty: 100\t\r\n\r\n--------------------------------------------------------------------------\r\n\e[?25l\e[32m?\e[39m \e[1mWhat would you like to do?\e[22m\e[0m \e[0m\e[2m(Use arrow keys)\e[22m\r\n\e[36m❯ View Products for Sale\e[39m \r\n  View Items with Low Inventory \r\n  Add Inventory to an Item \r\n  Add a new Product \r\n  Exit \e[7D\e[7C"
+  - delay: 5000
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mWhat would you like to do?\e[22m\e[0m \e[0m\r\n  View Products for Sale \r\n\e[36m❯ View Items with Low Inventory\e[39m \r\n  Add Inventory to an Item \r\n  Add a new Product \r\n  Exit \e[7D\e[7C"
+  - delay: 208
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mWhat would you like to do?\e[22m\e[0m \e[0m\r\n  View Products for Sale \r\n  View Items with Low Inventory \r\n\e[36m❯ Add Inventory to an Item\e[39m \r\n  Add a new Product \r\n  Exit \e[7D\e[7C"
+  - delay: 192
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mWhat would you like to do?\e[22m\e[0m \e[0m\r\n  View Products for Sale \r\n  View Items with Low Inventory \r\n  Add Inventory to an Item \r\n\e[36m❯ Add a new Product\e[39m \r\n  Exit \e[7D\e[7C"
+  - delay: 200
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mWhat would you like to do?\e[22m\e[0m \e[0m\r\n  View Products for Sale \r\n  View Items with Low Inventory \r\n  Add Inventory to an Item \r\n  Add a new Product \r\n\e[36m❯ Exit\e[39m \e[7D\e[7C"
+  - delay: 1000
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mWhat would you like to do?\e[22m\e[0m \e[0m\e[36mExit\e[39m\e[33D\e[33C\r\n\e[?25h{ menuOptions: \e[32m'Exit'\e[39m }\r\n\e[?25h"
+  - delay: 9
+    content: "\e]7;file://MRH-MAC13.local/Users/mhopkins/Desktop/code/bamazon-node-mysql\a"
+  - delay: 8
+    content: "\e]1337;RemoteHost=mhopkins@MRH-MAC13.local\a\e]1337;CurrentDir=/Users/mhopkins/Desktop/code/bamazon-node-mysql\a\e]133;D;0\a\e]133;A\aMRH-MAC13:bamazon-node-mysql mhopkins$ \e]133;B\a"
+  - delay: 2000
+    content: "logout\r\n"
+  - delay: 9
+    content: "\e]133;C;\aSaving session..."
+  - delay: 12
+    content: "\r\n...saving history..."
+  - delay: 11
+    content: "truncating history files...\r\n...completed.\r\n"
