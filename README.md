@@ -54,6 +54,7 @@ The manager interface allows the user to:
 
 - [inquirer](https://www.npmjs.com/package/inquirer) - A collection of common interactive command line user interfaces
 - [mysql](https://www.npmjs.com/package/dotenv) - Node.js driver for MySQL
+- [terminalizer](https://www.npmjs.com/package/terminalizer) - Record your terminal and generate animated gif images
 
 ---
 
