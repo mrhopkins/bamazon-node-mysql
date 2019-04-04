@@ -34,7 +34,7 @@ The manager interface allows the user to:
 
 ![See and Add to Low](./assets/images/managerdemo_2.gif)
 
-4. Add New Product (Create and a new entry to the mySQL database)
+4. Add New Product (Create and add new entry to the mySQL database)
 
 ![Create New Product](./assets/images/managerdemo_3.gif)
 
